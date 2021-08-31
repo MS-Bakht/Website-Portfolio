@@ -1,0 +1,119 @@
+.cproj {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10rem 0;
+}
+
+.cproj h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%,#ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    /* background-clip: text; */
+    -moz-background-clip: text;
+    /* background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.cproj__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cproj__card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100% );
+    transition: 0.3s ease-in;
+}
+
+.cproj__card:nth-child(1) {
+    background-image: linear-gradient(-225deg, #231557 0% , #44107a 29%, #ff1361 67%, #fff800 100%);
+}
+/*.cproj__card:nth-child(2) {
+    background-image: linear-gradient(-225deg, #fdeff9 0% , #ec38bc 29% , #7303c0 67% , #03001e 100%);
+}*/
+/*.cproj__card:nth-child(3) {
+    background-image: linear-gradient(-225deg, #231557 0% , #44107a 29%, #ff1361 67%, #fff800 100%);
+}*/
+
+/*.cproj__card:nth-child(4){
+    background-image: linear-gradient(-225deg, #fdeff9 0% , #ec38bc 29% , #7303c0 67% , #03001e 100%);
+}
+*/
+.cproj__card h2 {
+    text-align: center;
+}
+
+.cproj__card p {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+}
+
+.cproj__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+}
+
+.cproj__card button {
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+}
+
+.cproj__card button:hover {
+    cursor: pointer;
+}
+
+.cproj__card:hover {
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+.cproj__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.cproj__btn:after {
+    position:absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+   
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.cproj__btn:hover{
+    color: #fff;
+}
+
+.cproj__btn:hover:after{
+    width:100%;
+}
